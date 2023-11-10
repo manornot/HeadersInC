@@ -53,9 +53,7 @@ int subtract(int a, int b);
 
 ## Tasks
 Students should:
-- Create header files for their function declarations.
-- Understand the relationship between header files and source files.
-- Use header files to organize and manage their C projects.
+- Create header files for 4 functions: add, substract, devide, multyply.
 
 ## Resources
 - [C Programming Language](https://en.cppreference.com/w/c/language)
