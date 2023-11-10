@@ -51,9 +51,40 @@ int subtract(int a, int b);
 - Group related declarations together in the same header file.
 - Include comments to explain the purpose and usage of the functions.
 
-## Tasks
-Students should:
-- Create header files for 4 functions: add, substract, devide, multyply.
+### Task 1: Single Header Inclusion
+**Objective**: Create a header file and include it in your main program file.
+- Create a header file `greetings.h` that declares a function `void say_hello(void);`.
+- Implement the `say_hello` function in a separate `greetings.c` file that prints "Hello, World!" to the console.
+- In your `main.c`, include the `greetings.h` header and call the `say_hello` function.
+- The executable should be named `hello`.
+
+**Files**:
+- `greetings.h`
+- `greetings.c`
+- `main.c`
+
+### Task 2: Multiple Header Inclusions
+**Objective**: Create multiple header files and include them in a single main program file.
+- Create two header files, `math_operations.h` and `print_operations.h`.
+- `math_operations.h` declares functions - 
+add, substract, devide, multyply. `print_operations.h` declares a function `void print_result(int result);`.
+- Implement these functions in `math_operations.c` and `print_operations.c` respectively.
+- The `main.c` file should include both headers and use the declared functions to add, substract, devide, multyply two numbers and print the result.
+- The executable should be named `math_printer`.
+
+**Files**:
+- `math_operations.h`
+- `math_operations.c`
+- `print_operations.h`
+- `print_operations.c`
+- `main.c`
+
+### Task 3: Nested Header Inclusions
+**Objective**: Create a nested header inclusion scenario where one header file includes another.
+- Create a header file `array_utils.h` that declares a function `void fill_array(int* array, int size, int value);`.
+- Create another header file `utils.h` that includes `array_utils.h` and declares another function `void print_array(int* array, int size);`.
+- Implement these functions in `array_utils.c` and `utils.c`.
+- In `main.c`, include `utils.h` and
 
 ## Resources
 - [C Programming Language](https://en.cppreference.com/w/c/language)
