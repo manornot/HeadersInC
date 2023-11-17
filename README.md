@@ -84,14 +84,27 @@ add, substract, devide, multyply. `print_operations.h` declares a function `void
 - Create a header file `array_utils.h` that declares a function `void fill_array(int* array, int size, int value);`.
 - Create another header file `utils.h` that includes `array_utils.h` and declares another function `void print_array(int* array, int size);`.
 - Implement these functions in `array_utils.c` and `utils.c`.
-- In `main.c`, include `utils.h` and
+- In `main.c`, include `utils.h` and use the functions to demonstrate array operations.
+- Create an array in `main.c`, use `fill_array` to populate it with a specific value, and then use `print_array` to display the contents of the array.
+- The executable should be named `array_util_demo`.
+
+**Files**:
+- `array_utils.h`
+- `array_utils.c`
+- `utils.h`
+- `utils.c`
+- `main.c`
+
+This task demonstrates how header files can be nested and used together to create more complex functionality.
+
+
 
 ## Resources
 - [C Programming Language](https://en.cppreference.com/w/c/language)
 - [Organizing Code Files in C and C++](https://www.learncpp.com/cpp-tutorial/organizing-code-files-in-c-and-cpp/)
 - [Header Files in C](https://en.wikipedia.org/wiki/Header_file)
 
-## Conclusion
-Mastering the use of header files is essential for developing complex C programs. They provide the means to create a clear and efficient codebase that is easy to manage and expand.
+### Conclusion
+Mastering the use of header files is an essential skill for any C programmer. It enhances code organization, maintainability, and scalability, making it easier to manage large and complex codebases. By following best practices and understanding tasks like single, multiple, and nested header inclusions, you can develop more efficient and organized C programs.
 
 ---
